@@ -9,12 +9,24 @@ function Tutors() {
     <section className="tutorWrapper">
         <h2 className="tutorTitle">Unlimited access to over 100+ tutors.</h2>
         <div className="videoFlex">
-            <video className='video' src={Video1} width="300" height="200" controls='control' autoplay="false" />
-            <video className='video' src={Video2} width="300" height="200" controls='control' autoplay="false" />
-            <video className='video' src={Video3} width="300" height="200" controls='control' autoplay="false" />
-            <video className='video' src={Video1} width="300" height="200" controls='control' autoplay="false" />
-            <video className='video' src={Video2} width="300" height="200" controls='control' autoplay="false" />
-            <video className='video' src={Video3} width="300" height="200" controls='control' autoplay="false" />
+            <div className="videoBox">
+                <video src={Video1} width="300" height="200" controls='control' autoplay="false" />
+            </div>
+            <div className="videoBox">
+                <video src={Video2} width="300" height="200" controls='control' autoplay="false" />
+            </div>
+            <div className="videoBox">
+                <video src={Video3} width="300" height="200" controls='control' autoplay="false" />
+            </div>
+            <div className="videoBox">
+                <video src={Video1} width="300" height="200" controls='control' autoplay="false" />
+            </div>
+            <div className="videoBox">
+                <video src={Video2} width="300" height="200" controls='control' autoplay="false" />
+            </div>
+            {/* <div className="videoBox">
+                <video src={Video3} width="300" height="200" controls='control' autoplay="false" />
+            </div> */}
         </div>
     </section>
   )

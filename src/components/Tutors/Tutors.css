@@ -2,6 +2,7 @@
     background-image: var(--gradient-blue);
     padding: 2rem;
     border-radius: 10px;
+    margin-bottom: 7rem;
 }
 
 .videoFlex{
@@ -12,6 +13,6 @@
     margin-top: 2rem;
 }
 
-.video{
+.videoBox{
     margin: 1rem;
 }

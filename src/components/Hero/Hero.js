@@ -9,7 +9,7 @@ function Hero() {
       <img className='logo' src={Logo} alt='Logo' />
       <section className='flexBox'>
         <div className="flexOne">
-          <h4 className="colorText">Lorem Ipsum del luna</h4>
+          <h4 className="colorText">24/7 COURSE HELP</h4>
           <h1 className="heroText">
             Learn to speak English fluently with our online tutors.
           </h1>
