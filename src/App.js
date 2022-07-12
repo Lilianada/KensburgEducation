@@ -1,11 +1,12 @@
 import './App.css';
+import Hero from './components/Hero/Hero';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <h1>Designsbylilian</h1>
-      </header>
+      <main className='bodyWrapper'>
+        <Hero />
+      </main>
     </div>
   );
 }
