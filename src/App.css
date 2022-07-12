@@ -13,7 +13,7 @@
     --gradient-color: linear-gradient(90deg, #8975ff, #ce85df 50%, #b3a2fd);
 
     /* FontStyle*/
-    --fontOne: 'Inter', sans-serif;
+    --fontOne: 'space_groteskregular', sans-serif;
    
     /* Font Sizes */
     --font-thirtyTwo: 1.35rem;
@@ -48,6 +48,16 @@
 
 html {
     scroll-behavior: smooth;
+}
+
+
+@font-face {
+    font-family: 'space_groteskregular';
+    src: url('../src/assets/spacegrotesk-regular-webfont.woff2') format('woff2'),
+         url('../src/assets/spacegrotesk-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
 }
 
 
