@@ -1,6 +1,3 @@
-/*------------ [Font] -----------*/
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
-
 /*------------ [Root]-----------*/
 :root {
 
@@ -14,8 +11,10 @@
 
     /* FontStyle*/
     --fontOne: 'space_groteskregular', sans-serif;
+    --fontTwo: 'space_groteskbold', sans-serif;
    
     /* Font Sizes */
+    --font-fiftySix: 2rem;
     --font-thirtyTwo: 1.35rem;
     --font-twentyFour: 1.25rem;
     --font-eighteen: 1.125rem;
@@ -26,6 +25,7 @@
 
 @media screen and (min-width:900px) {
     :root {
+        --font-fiftySix: 3rem;
         --font-thirtyTwo: 2rem;
         --font-twentyFour: 1.5rem;
         --font-eighteen: 1.25rem;
@@ -53,14 +53,21 @@ html {
 
 @font-face {
     font-family: 'space_groteskregular';
-    src: url('../src/assets/spacegrotesk-regular-webfont.woff2') format('woff2'),
-         url('../src/assets/spacegrotesk-regular-webfont.woff') format('woff');
+    src: url('../src/assets/Spacegrotesk/spacegrotesk-regular-webfont.woff2') format('woff2'),
+         url('../src/assets/Spacegrotesk/spacegrotesk-regular-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
 }
 
+@font-face {
+    font-family: 'space_groteskbold';
+    src: url('../src/assets/Spacegrotesk/spacegrotesk-bold-webfont.woff2') format('woff2'),
+         url('../src/assets/Spacegrotesk/spacegrotesk-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
 
+}
 /*========================================*/
 /*--------------- [_Utility] -------------*/
 /*========================================*/
@@ -93,10 +100,10 @@ p {
 }
 
 h1 {
-    font-size: var(--font-thirtyTwo);
+    font-size: var(--font-fiftySix);
     font-family: var(--fontTwo);
-    line-height: 2rem;
-    font-weight: 600;
+    line-height: 50px;
+    font-weight: 700;
     letter-spacing: 2px;
 }
 
