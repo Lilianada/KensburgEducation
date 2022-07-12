@@ -14,7 +14,7 @@
     --fontTwo: 'space_groteskbold', sans-serif;
    
     /* Font Sizes */
-    --font-fiftySix: 2rem;
+    --font-sixtyFour: 3.5rem;
     --font-thirtyTwo: 1.35rem;
     --font-twentyFour: 1.25rem;
     --font-eighteen: 1.125rem;
@@ -25,7 +25,7 @@
 
 @media screen and (min-width:900px) {
     :root {
-        --font-fiftySix: 3rem;
+        --font-sixtyFour: 4rem;
         --font-thirtyTwo: 2rem;
         --font-twentyFour: 1.5rem;
         --font-eighteen: 1.25rem;
@@ -77,7 +77,7 @@ body {
     background-color: var(--white-color);
     font-family: var(--fontOne);
     color: var(--black-color);
-    letter-spacing: 1px;
+    letter-spacing: 0px;
 }
 
 p, h1, h2, h3,
@@ -100,11 +100,11 @@ p {
 }
 
 h1 {
-    font-size: var(--font-fiftySix);
+    font-size: var(--font-sixtyFour);
     font-family: var(--fontTwo);
-    line-height: 50px;
+    line-height: 3.5rem;
     font-weight: 700;
-    letter-spacing: 2px;
+    letter-spacing: -2px;
 }
 
 h2 {
@@ -153,12 +153,17 @@ img {
   background-position: center;
   background-size: cover;
 }
+@media screen and (min-width: 900px) {
+    h1{
+        line-height: 4rem;
+    }
+}
 
 /*--------------- [Body Wrapper] -------------*/
 .bodyWrapper{
   display: grid;
   grid-template-columns: 100%;
-  /* gap: 2rem; */
+  gap: 2rem;
   /* max-width: 2560px; */
 }
 

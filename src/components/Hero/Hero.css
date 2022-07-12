@@ -1,6 +1,7 @@
-/* .heroWrapper{
+.heroWrapper{
+    height: 100%;
+}
 
-} */
 .logo{
     width: 7rem;
     margin: 1rem auto;
@@ -11,19 +12,77 @@
 
 .flexBox{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
+    align-items: center;
     margin: auto;
-    padding-left: 4rem;
-    padding-right: 4rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
 }
 
 .flexOne{
-    width: 80%;
+    width: 90%;
 }
 
+.flexTwo{
+    width: 100%;
+}
+
+.colorText{
+    background: var(--gradient-color);
+    margin-bottom: 1rem;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.cto{
+    /* width: 10rem; */
+    height: 3rem;
+    padding: .75rem 1rem;
+    margin-top: 2rem;
+    border: 2px solid #000000;
+    background-color: #fff;
+    color: var(--black-color);
+    border-radius: 10px;
+    font-family: inherit;
+    font-size: var(--fontFourteen);
+    font-weight: 600;
+    cursor: pointer;
+    transition: .3s linear;
+}
+
+.cto:hover{
+    border: 2px solid var(--purple-color);
+    background: var(--gradient-color);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+@media screen and (min-width: 768px) {
+    .flexOne{
+        width: 55%;
+    } 
+     
+    .flexTwo{
+        display: block;
+        width: 45%;
+    }  
+}
 
 @media screen and (min-width: 900px) {
+    .flexBox{
+        padding-left: 4rem;
+        padding-right: 4rem;
+    }
+
     .flexOne{
+        width: 50%;
+    } 
+     
+    .flexTwo{
+        display: block;
         width: 50%;
     }  
 }
