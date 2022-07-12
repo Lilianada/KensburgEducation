@@ -1,0 +1,94 @@
+.serviceWrapper{
+    display: flex;
+    margin-bottom: 7rem;
+}
+
+.serviceHead{
+    width: 30%;
+    margin-top: 3rem;
+}
+
+.gridBox{
+    display: flex;
+    flex-wrap: wrap;
+    width: 70%;
+}
+
+.grid{
+    height: 13rem;
+    width: 14rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border-radius: 10px;
+    margin: 1rem;
+}
+
+.gridText{
+    padding: 2rem;
+}
+
+.smallText{
+    background: var(--gradient-color);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.tutorIcons{
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    margin: .5rem 1rem;
+}
+
+.tutorIcon{
+    width: 3rem;
+    height: 3rem;
+    padding: .5rem;
+}
+
+.circle{
+    background-color: var(--black-color);
+    padding: .75rem .25rem;
+    height: 2rem;
+    width: 2rem;
+    text-align: center;
+    border-radius: 50%;
+    color: var(--white-color);
+    font-size: 10px;
+}
+
+.green{
+    background-image: var(--gradient-green);
+}
+
+.purple{
+    background-image: var(--gradient-purple);
+}
+
+.yellow{
+    background-image: var(--gradient-yellow);
+}
+
+.blue{
+    background-image: var(--gradient-blue);
+}
+
+.orange{
+    background-image: var(--gradient-orange);
+}
+
+.pink{
+    background-image: var(--gradient-pink);
+}
+
+
+@media screen and (min-width: 900px) {
+    .gridBox{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        place-items: center;
+        align-items: start;}
+}

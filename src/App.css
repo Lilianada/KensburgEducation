@@ -8,6 +8,12 @@
     --grey-color: #D9D9D9;
     --purple-color: #8975ff;
     --gradient-color: linear-gradient(90deg, #8975ff, #ce85df 50%, #b3a2fd);
+    --gradient-purple: linear-gradient(90deg, #e2ddff, #f3e1f7 50%, #ece8fe);
+    --gradient-green: linear-gradient(45deg, #e4f8eb, #e1f6ef 50%, #dcebed);
+    --gradient-yellow: linear-gradient(90deg, #fffddd, #f7e6e1 50%, #fef6e8);
+    --gradient-blue: linear-gradient(90deg, #ddebff, #e1f5f7 50%, #e8e8fe);
+    --gradient-pink: linear-gradient(90deg, #ffddfb, #fdddff 50%, #e8f4fe);
+    --gradient-orange: linear-gradient(90deg, #ffdddd, #ffeddd 50%, #fee8e8);
 
     /* FontStyle*/
     --fontOne: 'space_groteskregular', sans-serif;
@@ -153,19 +159,26 @@ img {
   background-position: center;
   background-size: cover;
 }
-@media screen and (min-width: 900px) {
-    h1{
-        line-height: 4rem;
-    }
-}
 
 /*--------------- [Body Wrapper] -------------*/
 .bodyWrapper{
   display: grid;
   grid-template-columns: 100%;
   gap: 2rem;
+  margin: 0 1rem;
   /* max-width: 2560px; */
 }
 
 
 
+
+
+@media screen and (min-width: 900px) {
+    h1{
+        line-height: 4rem;
+    }
+
+    .bodyWrapper{
+        margin: 0 4rem;
+    }
+}

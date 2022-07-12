@@ -19,6 +19,19 @@ function Hero() {
           <img src={Image} alt="Hero" />
         </div>
       </section>
+      <section className="services">
+        <div className="serviceBar"></div>
+        <div className="serviceItem">
+          <h3>Online Tutoring</h3>
+        </div>
+        <div className="serviceItem">
+          <h3>In-home Tutoring</h3>
+        </div>
+        <div className="serviceItem">
+          <h3>In-office Tutoring</h3>
+        </div>
+        <div className="serviceBar"></div>
+      </section>
     </div>
   )
 }

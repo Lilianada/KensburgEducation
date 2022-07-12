@@ -1,13 +1,15 @@
 import './App.css';
 import Hero from './components/Hero/Hero';
-import Services from './components/Services/Services';
+import Courses from './components/Courses/Courses';
+import Tutors from './components/Tutors/Tutors';
 
 function App() {
   return (
     <div className="App">
       <main className='bodyWrapper'>
         <Hero />
-        <Services />
+        <Courses />
+        <Tutors />
       </main>
     </div>
   );

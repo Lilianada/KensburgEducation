@@ -1,9 +1,10 @@
 .heroWrapper{
     height: 100%;
+    margin-bottom: 7rem;
 }
 
 .logo{
-    width: 7rem;
+    width: 5rem;
     margin: 1rem auto;
     display: grid;
     place-items: center;
@@ -16,8 +17,6 @@
     justify-content: space-between;
     align-items: center;
     margin: auto;
-    padding-left: 1rem;
-    padding-right: 1rem;
 }
 
 .flexOne{
@@ -60,6 +59,46 @@
     -webkit-text-fill-color: transparent;
 }
 
+.services{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4rem;
+}
+
+.serviceItem{
+    width: 100%;
+    height: max-content;
+    border: 3px solid #000000;
+    padding: 1rem;
+    text-align: center;
+    background-color: var(--white-color);
+}
+
+.serviceBar{
+    width: 20%;
+    height: 3px;
+    background: var(--black-color);
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+@media screen and (min-width: 500px) {
+    .services{
+        flex-direction: row;
+    }
+    
+    .serviceItem{
+        width: auto;
+    }
+
+    .serviceBar{
+        display: flex;
+    }
+}
+
 @media screen and (min-width: 768px) {
     .flexOne{
         width: 55%;
@@ -72,10 +111,6 @@
 }
 
 @media screen and (min-width: 900px) {
-    .flexBox{
-        padding-left: 4rem;
-        padding-right: 4rem;
-    }
 
     .flexOne{
         width: 50%;
@@ -85,4 +120,11 @@
         display: block;
         width: 50%;
     }  
+
+}
+
+@media screen and (min-width: 1200px) {
+    .serviceItem{
+        width: auto;
+    }
 }

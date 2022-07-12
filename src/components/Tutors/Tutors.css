@@ -1,0 +1,17 @@
+.tutorWrapper{
+    background-image: var(--gradient-blue);
+    padding: 2rem;
+    border-radius: 10px;
+}
+
+.videoFlex{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.video{
+    margin: 1rem;
+}
